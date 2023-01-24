@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Paidy Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <br />
+
+    <label>
+      <input
+        type="radio"
+        name="payment-option"
+        value="paypal"
+        id="paypal-radio"
+        checked
+      />
+      <span id="paypal-mark"></span>
+    </label>
+
+    <label>
+      <input
+        id="paidy-radio"
+        value="paidy"
+        name="payment-option"
+        type="radio"
+      />
+      <span id="paidy-mark"></span>
+    </label>
+
+    <div id="paidy-fields"></div>
+
+    <div id="paypal-btn"></div>
+    <div id="paidy-btn"></div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AScYnde7ES-f2UfWNKTmC3swmBBahQdLDkHPn6KGReBJTdSKUlIMh1a_94SiAE771ASKCZ3YAMD4Sx41&components=buttons,payment-fields,marks,funding-eligibility&enable-funding=paidy&currency=JPY"></script>
+    <!-- <script src="https://localhost.paypal.com:8443/sdk/js?client-id=B_AKWfcNMzQ9XUcWJfWdqWsTVlL9960T0JQjoHea7dw5_mxT6kmyn1-z57uDPgLSrJ686KJE1e5Dr7Lj20&debug=true&components=buttons,payment-fields,marks,funding-eligibility&buyer-country=JP&currency=JPY"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" async></script>
+    <script src="./index.js"></script>
+
+  </body>
+</html>
